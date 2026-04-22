@@ -4,8 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Comment
+
+        // This is a super duper cool comment.
+        // another comment
         Console.WriteLine("Hello Sandbox World!");
-        Console.WriteLine("This is another line.");
     }
 }
