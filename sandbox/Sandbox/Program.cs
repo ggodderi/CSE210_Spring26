@@ -6,5 +6,6 @@ class Program
     {
         // Comment
         Console.WriteLine("Hello Sandbox World!");
+        Console.WriteLine("This is another line.");
     }
 }
