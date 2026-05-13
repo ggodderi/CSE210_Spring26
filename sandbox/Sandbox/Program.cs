@@ -1,5 +1,6 @@
 using System;
 using System.Linq.Expressions;
+using System.Reflection;
 
 class Program
 {
@@ -15,13 +16,56 @@ class Program
         return total;
     }
 
+    static void ByValue(int x)
+    {
+        x += 10;
+        Console.WriteLine(x);
+    }
+
+    static void ByReference(ref int x)
+    {
+        x += 99;
+        Console.WriteLine(x);
+    }
+
+    static void ByOut(out int x)
+    {
+        x = 10010;
+        Console.WriteLine(x);
+    }
+
     static void Main(string[] args)
     {
         DisplayGreeting();
         double total = AddNumbers(10, 20, 1001.234);
         Console.WriteLine(total);
 
-        int x = 10;
+        // int x = 10;
+
+        string name = "Bob";
+        string name2 = name;
+        string name3 = name;
+
+        name += "test";
+        Console.WriteLine(name);
+        Console.WriteLine(name2);
+        Console.WriteLine(name3);
+
+        int[] myData = new int[]{1, 2, 3, 4, 5};
+        int[] myData2 = myData;
+        myData[3] = 99;
+        Console.WriteLine(myData2[3]);
+
+        int x = 11;
+        ByValue(x);
+        Console.WriteLine($"In main: {x}");
+
+        ByReference(ref x);
+        Console.WriteLine($"In main: {x}");
+
+        int y;
+        ByOut(out y);
+        Console.WriteLine($"In main: {y}");
 
 
         // Console.WriteLine("Hello");
