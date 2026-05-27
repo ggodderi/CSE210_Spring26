@@ -2,6 +2,12 @@ using System;
 using System.Linq.Expressions;
 using System.Reflection;
 
+class  MyClass
+{
+    public int data;
+
+}
+
 class Program
 {
 
@@ -66,6 +72,10 @@ class Program
         int y;
         ByOut(out y);
         Console.WriteLine($"In main: {y}");
+
+        MyClass myClass= new MyClass();
+        myClass.data = 100;
+        
 
 
         // Console.WriteLine("Hello");
