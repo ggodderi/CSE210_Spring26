@@ -5,11 +5,12 @@ class Customer
     private int _id;
     private bool _isMember;
 
-    public Customer(string name, int id)
+    public Customer(string name, int id) : this(name, id, false)
     {
-        _name = name;
-        _id = id;
-        _isMember = false;
+        // _name = name;
+        // _id = id;
+        // _isMember = false;
+        // this(name, id, false);
     }
 
     
