@@ -1,5 +1,5 @@
 
-class BaseActivity
+public class BaseActivity
 {
     private string _name;
     private string _description;
