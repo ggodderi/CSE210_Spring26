@@ -9,8 +9,8 @@ class Person
     {
         _firstName = firstName;
         _lastName = lastName;
-        _age = age;
-        _weight = weight;
+        SetAge(age);
+        SetWeight(weight);
     }
 
     public string GetPersonInformation()
@@ -20,7 +20,25 @@ class Person
 
     public void ChangeWeight(int update)
     {
-        _weight += update;
+        SetWeight(_weight += update);
     }
 
+    public void SetAge(int age)
+    {
+        _age = age;
+        if (age < 0 || age >115)
+        {
+            _age = 0;
+            Console.WriteLine("Incorrect age");
+        }
+    }
+    public void SetWeight(int weight)
+    {
+        _weight = weight;
+        if (weight < 0 || weight > 500)
+        {
+            _weight = 0;
+            Console.WriteLine("Incorrect weight");
+        }
+    }
 }
