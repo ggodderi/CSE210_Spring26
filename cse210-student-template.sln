@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animations2", "sandbox\Anim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueVsReference", "sandbox\ValueVsReference\ValueVsReference.csproj", "{8F6F4C42-D582-4D86-A86A-6C82F86AB5AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceQuiz", "sandbox\Quizzes\InheritanceQuiz\InheritanceQuiz.csproj", "{339BE44E-44A0-4201-B591-FDBC4D6A8196}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -417,6 +419,18 @@ Global
 		{8F6F4C42-D582-4D86-A86A-6C82F86AB5AB}.Release|x64.Build.0 = Release|Any CPU
 		{8F6F4C42-D582-4D86-A86A-6C82F86AB5AB}.Release|x86.ActiveCfg = Release|Any CPU
 		{8F6F4C42-D582-4D86-A86A-6C82F86AB5AB}.Release|x86.Build.0 = Release|Any CPU
+		{339BE44E-44A0-4201-B591-FDBC4D6A8196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{339BE44E-44A0-4201-B591-FDBC4D6A8196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{339BE44E-44A0-4201-B591-FDBC4D6A8196}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{339BE44E-44A0-4201-B591-FDBC4D6A8196}.Debug|x64.Build.0 = Debug|Any CPU
+		{339BE44E-44A0-4201-B591-FDBC4D6A8196}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{339BE44E-44A0-4201-B591-FDBC4D6A8196}.Debug|x86.Build.0 = Debug|Any CPU
+		{339BE44E-44A0-4201-B591-FDBC4D6A8196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{339BE44E-44A0-4201-B591-FDBC4D6A8196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{339BE44E-44A0-4201-B591-FDBC4D6A8196}.Release|x64.ActiveCfg = Release|Any CPU
+		{339BE44E-44A0-4201-B591-FDBC4D6A8196}.Release|x64.Build.0 = Release|Any CPU
+		{339BE44E-44A0-4201-B591-FDBC4D6A8196}.Release|x86.ActiveCfg = Release|Any CPU
+		{339BE44E-44A0-4201-B591-FDBC4D6A8196}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -451,6 +465,7 @@ Global
 		{DB321D05-6AFD-4614-A267-A191FC20D277} = {9BD1CAC1-4326-4D59-9857-A733451B87EB}
 		{9E6F6681-B584-4F73-A270-52DF1F79A7B1} = {9BD1CAC1-4326-4D59-9857-A733451B87EB}
 		{8F6F4C42-D582-4D86-A86A-6C82F86AB5AB} = {9BD1CAC1-4326-4D59-9857-A733451B87EB}
+		{339BE44E-44A0-4201-B591-FDBC4D6A8196} = {727B35EF-0BCF-28A8-EEB5-4CB3D8379D6E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19AF66DC-EAD7-4425-8965-A7DBC84E77B9}
