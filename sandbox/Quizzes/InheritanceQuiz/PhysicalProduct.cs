@@ -6,8 +6,8 @@ class PhysicalProduct : Product
         _weight = weight;
     }
 
-    public override string GetInfo()
+    public string GetInfo()
     {
-        return $"Physical Item: {base.GetInfo()} - Weight: {_weight}kg";
+        return $"Physical Item: {ProductGetInfo()} - Weight: {_weight}kg";
     }
 }

@@ -6,8 +6,8 @@ class DigitalProduct : Product
         _downloadURL = downloadURL;
     }
 
-    public override string GetInfo()
+    public string GetInfo()
     {
-        return $"Digital Item: {base.GetInfo()} - Link: {_downloadURL}";
+        return $"Digital Item: {ProductGetInfo()} - Link: {_downloadURL}";
     }
 }

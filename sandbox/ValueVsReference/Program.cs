@@ -62,6 +62,11 @@
         Console.WriteLine($"In Main after call, data[1] is: {myData[1]}");
 
 
+        int w = 110;
+        Console.WriteLine($"In Main Function before PassByReference call, w is: {w}");
+        PassByReference(ref w);
+        Console.WriteLine($"In Main Function after PassByReference call, w is: {w}");
+
         int z;
         Console.WriteLine($"In Main Function before PassByOut call, z is: {"UNDEFINED"}");
         PassByOut(out z);

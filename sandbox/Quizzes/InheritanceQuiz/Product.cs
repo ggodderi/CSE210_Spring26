@@ -9,7 +9,7 @@ class Product
         _sku = sku;
     }
 
-    public virtual string GetInfo()
+    public string ProductGetInfo()
     {
         return $"{_name} ({_sku})";
     }
