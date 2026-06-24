@@ -1,5 +1,4 @@
-
-class BaseGoal
+abstract class BaseGoal
 {
     private string _name;
     private string _description;
@@ -16,23 +15,25 @@ class BaseGoal
         _goalType = "";
     }
 
-    public void SetName()
+    protected void SetName()
     {
         Console.Write("What is the name of the goal: ");
         _name = Console.ReadLine();
     }
-    public void SetDescription()
+    protected void SetDescription()
     {
         Console.Write($"Enter the description for {_name} goal: ");
         _description = Console.ReadLine();
     }
 
-    public void SetNumberOfPoints()
+    protected void SetNumberOfPoints()
     {
         Console.Write($"Enter the points earned for {_name} goal: ");
         _numberOfPoints = int.Parse(Console.ReadLine());
     }
 
+
+    // FOrmat and return a string can be used to display the goal.
     public virtual string GetDisplayString()
     {
         // If this goal is complete, place and X in the status location.
@@ -48,10 +49,13 @@ class BaseGoal
     MarkComplete will set the status to true, which means complete and 
     return the number of points for completing goal.
      */
-    public int MarkComplete()
+    protected int MarkComplete()
     {
         _status = true;
         return _numberOfPoints;
     }
+
+    public abstract void CreateGoal();
+    public abstract void RecordEvent();
 
 }
