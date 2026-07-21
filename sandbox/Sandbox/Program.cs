@@ -75,6 +75,12 @@ class Program
 
         MyClass myClass= new MyClass();
         myClass.data = 100;
+
+        double interestRate = 6.75;
+        if (interestRate <= 4.75);
+        {
+            Console.WriteLine("You have a great interest rate.");
+        }
         
 
 

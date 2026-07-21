@@ -8,6 +8,20 @@ vehicles and executes their daily tasks.
 Every vehicle has an ID and a battery level, but different types of vehicles move differently and 
 have unique operational rules.
 */
+public class Supplier 
+{
+	public virtual void Deliver ()
+    {
+        Console.WriteLine("Delivering . . .");
+    }
+}  
+public class Servicer : Supplier 
+{
+	public override void Deliver ()
+    {
+        Console.WriteLine("Servicer Delivering . . .");
+    }
+} 
 
 class Program
 {
@@ -29,6 +43,8 @@ class Program
         {
             v.Move(10);
         }
+Supplier mySupplier = new Servicer();
+mySupplier.Deliver();
 
 
     }
